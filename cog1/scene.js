@@ -454,7 +454,7 @@ function(exports, dojo, domStyle, app, scenegraph, createScene, animation, raste
 			// Back-face culling.
 			// Check if polygon is facing away from the camera (in negative z-direction).
 
-			if (normal[2]<0 && backfaceCulling){
+			if (backfaceCulling && normal[2]<0 ){
 				continue;
 			}
 
